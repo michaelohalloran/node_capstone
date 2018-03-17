@@ -1,0 +1,15 @@
+<% include ./partials/header %>
+
+<h1>Outdoor Scenes</h1>
+<section>
+    <p>
+        <% posts.forEach((post)=> {%>
+            <h4><%= post.title %></h4>
+            <p><%= post.content %></p>
+            <img src="<%= post['image'] %>"></img>
+        <% }); %>
+    </p>
+</section>
+
+
+  <% include ./partials/footer %>
